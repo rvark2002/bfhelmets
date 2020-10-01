@@ -25,8 +25,10 @@ import org.bukkit.plugin.Plugin;
 public class HelmetGUI implements Listener
 {
 
-	
-	
+//This is the work in progress Helmet GUI, Here you may see some stuff unrelated to helmets
+//This is because I copy and pasted another gui we had in here
+//Almost all of this will be changed
+
 private final Inventory inv;
 	
 	private Plugin plugin = Main.getPlugin(Main.class);
@@ -38,7 +40,7 @@ private final Inventory inv;
 
 	}
 	
-	
+	//Initializes GUI
 	
 	public HelmetGUI(Plugin plugin, Player p)
 	{
@@ -56,7 +58,7 @@ private final Inventory inv;
 	}
 	
 	
-	
+	//Sets all the basic items in the gui
     public void initializeItems(Player p) {
     	String s = ""+getSkillPoints(p);
     	
@@ -97,6 +99,8 @@ private final Inventory inv;
 	}
 	
 	
+	
+	
 	public int getSkillPoints(Player p)
 	{
 		
@@ -114,7 +118,7 @@ private final Inventory inv;
 	
 
 	
-	
+	//How we add a gui item to a certain slot
 	
     private ItemStack createGuiItem(int n,final Material material, final String name, boolean enchanted) {
         ItemStack item = new ItemStack(material, 1);
@@ -142,6 +146,7 @@ private final Inventory inv;
         return item;
     }
 	
+    //Handling clicking items in inventory
 	
     @EventHandler
     public void onInventoryClick(final InventoryClickEvent e) {
@@ -203,6 +208,8 @@ private final Inventory inv;
         
     }
     
+    
+    //preventing dragging
   
 
 	@EventHandler

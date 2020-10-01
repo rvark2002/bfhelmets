@@ -20,6 +20,9 @@ public class HelmetListener implements Listener
 	}
 
 	
+	//When right clicked with a feather that has a custom model data
+	//It will palce it on your head as long as you dont have any other items on
+	
 	@EventHandler
 	public void putHelm(PlayerInteractEvent event)
 	{
@@ -55,6 +58,7 @@ public class HelmetListener implements Listener
 	}
 	
 	
+	//Checks if its a helmet or not
 	
 	public boolean checkHelm(ItemStack is)
 	{

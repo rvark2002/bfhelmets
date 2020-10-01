@@ -14,6 +14,7 @@ public class Main extends JavaPlugin
 	public void onEnable()
 	{
 		
+		//Main stuff, no need to bother
 		
 		//new Crafting(this);
 		new HelmetListener(this);

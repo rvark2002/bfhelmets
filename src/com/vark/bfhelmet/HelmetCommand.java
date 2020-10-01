@@ -25,7 +25,7 @@ public class HelmetCommand implements CommandExecutor
 	public boolean onCommand(CommandSender cs, Command arg1,
 			 String arg2, String[] arg3) {
 		
-		
+		//Opens the helmet gui for us when we do /helmets
 		
 			if(cs instanceof Player)
 			{
@@ -71,7 +71,7 @@ public class HelmetCommand implements CommandExecutor
 	
 	
 	
-	
+	//This is how we create files that store the players owned helmets
 	
 	public void dataCreate(Player p)
 	{
