@@ -1,0 +1,14 @@
+name: BFHelmets
+main: com.vark.bfhelmet.Main
+version: 0.5
+api-version: 1.16
+commands:
+    helmets:
+        description: Helmet GUI!
+        usage: /helmets
+
+permissions:
+    bfhelmet.admin:
+        description: Ability to spawn a helmet in
+        default: op
+   
