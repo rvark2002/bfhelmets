@@ -26,6 +26,8 @@ public class Main extends JavaPlugin
 		File userFolder = new File(this.getDataFolder(), "data");
 		userFolder.mkdirs();
 		
+		//Hi this is a test!
+		
 	}
 	
 	
