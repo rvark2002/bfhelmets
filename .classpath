@@ -3,5 +3,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/TrexC/OneDrive/Desktop/Servers/Test Server1.16/spigot-1.16.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Cavan/Desktop/spigot-1.16.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
