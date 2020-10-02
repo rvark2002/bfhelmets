@@ -36,7 +36,7 @@ public class Crafting implements Listener
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
 		hstm.setDisplayName(ChatColor.YELLOW+""+ChatColor.BOLD+"Yellow Stormtrooper Helmet");	
-		hstm.setCustomModelData(101);
+		hstm.setCustomModelData(106);
 		ArrayList<String> lore = new ArrayList<String>();
 		lore.add("This is the yellow stormtrooper helmet!");
 		lore.add("It makes you faster! Providing speed and haste!");
@@ -56,7 +56,7 @@ public class Crafting implements Listener
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
 		hstm.setDisplayName(ChatColor.RED+""+ChatColor.BOLD+"Stormtrooper Helmet");	
-		hstm.setCustomModelData(101);
+		hstm.setCustomModelData(105);
 		ArrayList<String> lore = new ArrayList<String>();
 		lore.add("This is the red stormtrooper helmet!");
 		lore.add("Makes you stronger but is very heavy! Provides strength and slowness!");
@@ -76,7 +76,7 @@ public class Crafting implements Listener
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
 		hstm.setDisplayName(ChatColor.GREEN+""+ChatColor.BOLD+"Stealthtrooper Helmet");	
-		hstm.setCustomModelData(101);
+		hstm.setCustomModelData(104);
 		ArrayList<String> lore = new ArrayList<String>();
 		lore.add("This is the green stealthtrooper helmet!");
 		lore.add("Provides permanant night vision and you become invisible when crouching!");
@@ -95,7 +95,7 @@ public class Crafting implements Listener
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
 		hstm.setDisplayName(ChatColor.AQUA+""+ChatColor.BOLD+"Stormtrooper Helmet");	
-		hstm.setCustomModelData(101);
+		hstm.setCustomModelData(103);
 		ArrayList<String> lore = new ArrayList<String>();
 		lore.add("This is the basic stormtrooper helmet!");
 		lore.add("Toughens all you armor so you take less damage but its very heavy! Provides resistance and slowness!");
