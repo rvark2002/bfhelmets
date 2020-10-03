@@ -63,7 +63,7 @@ private final Inventory inv;
     	String s = ""+getSkillPoints(p);
     	
     	
-        inv.setItem(23,createGuiItem(101,Material.FEATHER, "§c&lAll Helmets",false));
+        inv.setItem(23,createGuiItem(101,Material.FEATHER, "§c§lAll Helmets",false));
 
 
         
@@ -145,10 +145,10 @@ private final Inventory inv;
         // Using slots click is a best option for your inventory click's
        // p.sendMessage("You clicked at slot " + e.getRawSlot());
         
-        if(e.getRawSlot() == 19 && (e.getInventory().getItem(e.getRawSlot()).getType() != Material.AIR && e.getInventory().getItem(e.getRawSlot()).getType() != null ))
+        if(e.getRawSlot() == 23 && (e.getInventory().getItem(e.getRawSlot()).getType() != Material.AIR && e.getInventory().getItem(e.getRawSlot()).getType() != null ))
         {
 		
-			Inventory i = new UnlockGUI(plugin,p).getInv();
+			Inventory i = new UnlockGui(plugin,p).getInv();
 			p.closeInventory();
 			p.openInventory(i);
 			

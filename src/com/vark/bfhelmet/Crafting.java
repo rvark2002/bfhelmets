@@ -43,7 +43,7 @@ public class Crafting implements Listener
 		lore.add("Right Click To Wear!"); 
 		hstm.setLore(lore);		
 		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet");
+		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet2");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
 		r.shape("III", "IGI", " R ");
 		r.setIngredient('I', Material.IRON_BLOCK);
@@ -63,7 +63,7 @@ public class Crafting implements Listener
 		lore.add("Right Click To Wear!"); 
 		hstm.setLore(lore);		
 		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet");
+		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet3");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
 		r.shape("III", "IGI", " B ");
 		r.setIngredient('I', Material.IRON_BLOCK);
@@ -83,7 +83,7 @@ public class Crafting implements Listener
 		lore.add("Right Click To Wear!"); 
 		hstm.setLore(lore);		
 		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet");
+		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet4");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
 		r.shape("III", "IGI", "   ");
 		r.setIngredient('I', Material.IRON_BLOCK);
@@ -102,7 +102,7 @@ public class Crafting implements Listener
 		lore.add("Right Click To Wear!"); 
 		hstm.setLore(lore);		
 		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet");
+		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet5");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
 		r.shape("III", "IGI", "XDX");
 		r.setIngredient('I', Material.IRON_BLOCK);
@@ -122,7 +122,7 @@ public class Crafting implements Listener
 		lore.add("Right Click To Wear!"); 
 		hstm.setLore(lore);		
 		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet");
+		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet1");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
 		r.shape("III", "IGI", "   ");
 		r.setIngredient('I', Material.IRON_BLOCK);
