@@ -63,28 +63,9 @@ private final Inventory inv;
     	String s = ""+getSkillPoints(p);
     	
     	
-        inv.setItem(19,createGuiItem(111,Material.MUSIC_DISC_FAR, "§1Utility",false));
-        
-        if(getPowerLevel(p, "forcepush") >= 1)
-        {
-        	inv.setItem(22,createGuiItem(131,Material.MUSIC_DISC_FAR, "§4Offense",false));
-                
-        	inv.setItem(25,createGuiItem(141,Material.MUSIC_DISC_FAR, "§aDefense",false));
-        	
-        	
-        	inv.setItem(49,createGuiItem(100,Material.DIAMOND, "§cForce Power Discs",true));
-        
-        }
+        inv.setItem(23,createGuiItem(101,Material.FEATHER, "§c&lAll Helmets",false));
 
-        
-        
-        
-        
-        boolean b = false;
-        if(getSkillPoints(p) >= 1)
-        	b = true;
-        
-        inv.setItem(53, createGuiItem(0, Material.MAGENTA_GLAZED_TERRACOTTA, "§lSkill Points "+s,b) );
+
         
 
     }
@@ -167,42 +148,14 @@ private final Inventory inv;
         if(e.getRawSlot() == 19 && (e.getInventory().getItem(e.getRawSlot()).getType() != Material.AIR && e.getInventory().getItem(e.getRawSlot()).getType() != null ))
         {
 		
-			Inventory i = new UtilityGUI(plugin,p).getInv();
+			Inventory i = new UnlockGUI(plugin,p).getInv();
 			p.closeInventory();
 			p.openInventory(i);
 			
 			
         }
         
-        if(e.getRawSlot() == 22 && (e.getInventory().getItem(e.getRawSlot()).getType() != Material.AIR && e.getInventory().getItem(e.getRawSlot()).getType() != null ))
-        {
-		
-			Inventory i = new OffenseGUI(plugin,p).getInv();
-			p.closeInventory();
-			p.openInventory(i);
-			
-			
-        }
-        
-        if(e.getRawSlot() == 25 && (e.getInventory().getItem(e.getRawSlot()).getType() != Material.AIR && e.getInventory().getItem(e.getRawSlot()).getType() != null ))
-        {
-		
-			Inventory i = new DefenseGUI(plugin,p).getInv();
-			p.closeInventory();
-			p.openInventory(i);
-			
-			
-        }
-        
-        if(e.getRawSlot() == 49 && (e.getInventory().getItem(e.getRawSlot()).getType() != Material.AIR && e.getInventory().getItem(e.getRawSlot()).getType() != null ))
-        {
-		
-			Inventory i = new ItemGUI(plugin,p).getInv();
-			p.closeInventory();
-			p.openInventory(i);
-			
-			
-        }
+
  
 
         
