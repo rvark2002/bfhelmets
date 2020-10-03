@@ -85,9 +85,10 @@ public class Crafting implements Listener
 		hst.setItemMeta(hstm);
 		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet4");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
-		r.shape("III", "IGI", "   ");
+		r.shape("III", "IGI", "X X");
 		r.setIngredient('I', Material.IRON_BLOCK);
 		r.setIngredient('G', Material.GLASS_PANE);
+		r.setIngredient('X', Material.GLASS);
 		plugin.getServer().addRecipe(r);	
 	}
 	
@@ -104,10 +105,9 @@ public class Crafting implements Listener
 		hst.setItemMeta(hstm);
 		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet5");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
-		r.shape("III", "IGI", "XDX");
+		r.shape("III", "IGI", " D ");
 		r.setIngredient('I', Material.IRON_BLOCK);
 		r.setIngredient('G', Material.GLASS_PANE);
-		r.setIngredient('X', Material.GLASS);
 		r.setIngredient('D', Material.DIAMOND);
 		plugin.getServer().addRecipe(r);	
 	}
