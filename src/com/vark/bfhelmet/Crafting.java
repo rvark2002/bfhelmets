@@ -96,7 +96,7 @@ public Crafting(Main plugin) {
 	public void Stormtrooper4Recipe() {
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
-		hstm.setDisplayName(ChatColor.GREEN+""+ChatColor.BOLD+"Stealthtrooper Helmet");	
+		hstm.setDisplayName(ChatColor.GREEN+""+ChatColor.BOLD+"Stormtrooper Helmet");	
 		hstm.setCustomModelData(104);
 		ArrayList<String> lore = new ArrayList<String>();
 		lore.add("This is the green stealthtrooper helmet!");
