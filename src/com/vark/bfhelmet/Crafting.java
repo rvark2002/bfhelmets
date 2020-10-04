@@ -21,7 +21,7 @@ public class Crafting implements Listener
 	private Plugin plugin = Main.getPlugin(Main.class);
 	
 	//This is the constructor which sets up the Crafting Listeners
-	public Crafting(Main plugin) {
+public Crafting(Main plugin) {
 		
 		plugin.getServer().getPluginManager().registerEvents(this, plugin);	
 		Stormtrooper1Recipe();
@@ -30,6 +30,7 @@ public class Crafting implements Listener
 		Stormtrooper4Recipe();
 		Stormtrooper5Recipe();
 	}
+
 	
 	public void Stormtrooper1Recipe() {
 		ItemStack hst = new ItemStack(Material.FEATHER);	
