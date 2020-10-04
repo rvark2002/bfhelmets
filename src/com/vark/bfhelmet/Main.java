@@ -29,47 +29,8 @@ public class Main extends JavaPlugin
 		File userFolder = new File(this.getDataFolder(), "data");
 		userFolder.mkdirs();
 		new Crafting(this);
-		runnable();
 	}
 	
-	public void runnable() {
-		new BukkitRunnable() {
-			
-			@Override
-			public void run() {
-				for(Player p : Bukkit.getServer().getOnlinePlayers()){	
-					if (p.getInventory().getHelmet() != null) {
-				 		ItemStack item = p.getInventory().getHelmet();
-			            if (item.getItemMeta().getDisplayName().equals(ChatColor.RED +""+ChatColor.BOLD+"Stormtrooper Helmet")) {
-			            	p.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 1005, 1, true));
-			            	p.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 1005, 1, true));
-				}else {
-					if (item.getItemMeta().getDisplayName().equals(ChatColor.YELLOW +""+ChatColor.BOLD+"Stormtrooper Helmet")) {
-						p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 1005, 1, true));
-						p.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, 1005, 1, true));
-					}else {
-						if (item.getItemMeta().getDisplayName().equals(ChatColor.WHITE +""+ChatColor.BOLD+"Stormtrooper Helmet")) {
-							p.addPotionEffect(new PotionEffect(PotionEffectType.HEALTH_BOOST, 1005, 1, true));
-						}else {
-							if (item.getItemMeta().getDisplayName().equals(ChatColor.BLUE +""+ChatColor.BOLD+"Stormtrooper Helmet")) {
-								p.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 1005, 1, true));
-								p.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 1005, 1, true));
-							}else {
-								if (item.getItemMeta().getDisplayName().equals(ChatColor.GREEN+""+ChatColor.BOLD+"Stormtrooper Helmet")) {
-									p.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 1005, 60, true));
-									if (p.isSneaking()) {
-										p.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 1005, 1, true));
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-				
-			}
-			
-	}
-}.runTaskTimer(this, 0, 1);
-}
+	
+
 }

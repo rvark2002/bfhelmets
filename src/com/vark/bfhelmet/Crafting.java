@@ -24,25 +24,25 @@ public class Crafting implements Listener
 public Crafting(Main plugin) {
 		
 		plugin.getServer().getPluginManager().registerEvents(this, plugin);	
-		Stormtrooper1Recipe();
-		Stormtrooper2Recipe();
-		Stormtrooper3Recipe();
-		Stormtrooper4Recipe();
-		Stormtrooper5Recipe();
+		StormtrooperRecipe();
+		cloneYellowRecipe();
+		cloneRedRecipe();
+		cloneBlueRecipe();
+		cloneGreenRecipe();
 	}
 
 	
-	public void Stormtrooper1Recipe() {
+	public void StormtrooperRecipe() {
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
 		hstm.setDisplayName(ChatColor.WHITE+""+ChatColor.BOLD+"Stormtrooper Helmet");	
 		hstm.setCustomModelData(101);
 		ArrayList<String> lore = new ArrayList<String>();
-		lore.add("This is the basic stormtrooper helmet!");
+		lore.add("This is the Basic Stormtrooper helmet!");
 		lore.add("Right Click To Wear!"); 
 		hstm.setLore(lore);		
 		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet1");
+		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
 		r.shape("III", "IGI", "***");
 		r.setIngredient('I', Material.IRON_BLOCK);
@@ -51,18 +51,18 @@ public Crafting(Main plugin) {
 		plugin.getServer().addRecipe(r);	
 	}
 	
-	public void Stormtrooper2Recipe() {
+	public void cloneYellowRecipe() {
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
-		hstm.setDisplayName(ChatColor.YELLOW+""+ChatColor.BOLD+"Yellow Stormtrooper Helmet");	
+		hstm.setDisplayName(ChatColor.YELLOW+""+ChatColor.BOLD+"Yellow Clone Helmet");	
 		hstm.setCustomModelData(106);
 		ArrayList<String> lore = new ArrayList<String>();
-		lore.add("This is the yellow stormtrooper helmet!");
+		lore.add("This is the Yellow Clone helmet!");
 		lore.add("It makes you faster! Providing speed and haste!");
 		lore.add("Right Click To Wear!"); 
 		hstm.setLore(lore);		
 		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet2");
+		NamespacedKey key = new NamespacedKey(plugin, "cloney");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
 		r.shape("III", "IGI", "*R*");
 		r.setIngredient('I', Material.IRON_BLOCK);
@@ -72,18 +72,18 @@ public Crafting(Main plugin) {
 		plugin.getServer().addRecipe(r);	
 	}
 
-	public void Stormtrooper3Recipe() {
+	public void cloneRedRecipe() {
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
-		hstm.setDisplayName(ChatColor.RED+""+ChatColor.BOLD+"Stormtrooper Helmet");	
+		hstm.setDisplayName(ChatColor.RED+""+ChatColor.BOLD+"Red Clone Helmet");	
 		hstm.setCustomModelData(105);
 		ArrayList<String> lore = new ArrayList<String>();
-		lore.add("This is the red stormtrooper helmet!");
+		lore.add("This is the Red Clone helmet!");
 		lore.add("Makes you stronger but is very heavy! Provides strength and slowness!");
 		lore.add("Right Click To Wear!"); 
 		hstm.setLore(lore);		
 		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet3");
+		NamespacedKey key = new NamespacedKey(plugin, "cloner");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
 		r.shape("III", "IGI", "*B*");
 		r.setIngredient('I', Material.IRON_BLOCK);
@@ -93,18 +93,18 @@ public Crafting(Main plugin) {
 		plugin.getServer().addRecipe(r);	
 	}
 	
-	public void Stormtrooper4Recipe() {
+	public void cloneGreenRecipe() {
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
-		hstm.setDisplayName(ChatColor.GREEN+""+ChatColor.BOLD+"Stormtrooper Helmet");	
+		hstm.setDisplayName(ChatColor.GREEN+""+ChatColor.BOLD+"Green Clone Helmet");	
 		hstm.setCustomModelData(104);
 		ArrayList<String> lore = new ArrayList<String>();
-		lore.add("This is the green stealthtrooper helmet!");
+		lore.add("This is the Green Clone helmet!");
 		lore.add("Provides permanant night vision and you become invisible when crouching!");
 		lore.add("Right Click To Wear!"); 
 		hstm.setLore(lore);		
 		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet4");
+		NamespacedKey key = new NamespacedKey(plugin, "cloneg");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
 		r.shape("III", "IGI", "X*X");
 		r.setIngredient('I', Material.IRON_BLOCK);
@@ -114,18 +114,18 @@ public Crafting(Main plugin) {
 		plugin.getServer().addRecipe(r);
 	}
 	
-	public void Stormtrooper5Recipe() {
+	public void cloneBlueRecipe() {
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
-		hstm.setDisplayName(ChatColor.AQUA+""+ChatColor.BOLD+"Stormtrooper Helmet");	
+		hstm.setDisplayName(ChatColor.AQUA+""+ChatColor.BOLD+"Blue Clone Helmet");	
 		hstm.setCustomModelData(103);
 		ArrayList<String> lore = new ArrayList<String>();
-		lore.add("This is the basic stormtrooper helmet!");
+		lore.add("This is a Blue Clone helmet!");
 		lore.add("Toughens all you armor so you take less damage but its very heavy! Provides resistance and slowness!");
 		lore.add("Right Click To Wear!"); 
 		hstm.setLore(lore);		
 		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet5");
+		NamespacedKey key = new NamespacedKey(plugin, "cloneb");
 		ShapedRecipe r = new ShapedRecipe(key, hst);
 		r.shape("III", "IGI", "*D*");
 		r.setIngredient('I', Material.IRON_BLOCK);
