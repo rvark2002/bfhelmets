@@ -30,7 +30,24 @@ public class Crafting implements Listener
 		Stormtrooper4Recipe();
 		Stormtrooper5Recipe();
 	}
-
+	
+	public void Stormtrooper1Recipe() {
+		ItemStack hst = new ItemStack(Material.FEATHER);	
+		ItemMeta hstm = hst.getItemMeta();		
+		hstm.setDisplayName(ChatColor.WHITE+""+ChatColor.BOLD+"Stormtrooper Helmet");	
+		hstm.setCustomModelData(101);
+		ArrayList<String> lore = new ArrayList<String>();
+		lore.add("This is the basic stormtrooper helmet!");
+		lore.add("Right Click To Wear!"); 
+		hstm.setLore(lore);		
+		hst.setItemMeta(hstm);
+		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet1");
+		ShapedRecipe r = new ShapedRecipe(key, hst);
+		r.shape("III", "IGI", "   ");
+		r.setIngredient('I', Material.IRON_BLOCK);
+		r.setIngredient('G', Material.GLASS_PANE);
+		plugin.getServer().addRecipe(r);	
+	}
 	
 	public void Stormtrooper2Recipe() {
 		ItemStack hst = new ItemStack(Material.FEATHER);	
@@ -51,7 +68,7 @@ public class Crafting implements Listener
 		r.setIngredient('R', Material.REDSTONE_BLOCK);
 		plugin.getServer().addRecipe(r);	
 	}
-	
+
 	public void Stormtrooper3Recipe() {
 		ItemStack hst = new ItemStack(Material.FEATHER);	
 		ItemMeta hstm = hst.getItemMeta();		
@@ -111,31 +128,5 @@ public class Crafting implements Listener
 		r.setIngredient('D', Material.DIAMOND);
 		plugin.getServer().addRecipe(r);	
 	}
-	
-	public void Stormtrooper1Recipe() {
-		ItemStack hst = new ItemStack(Material.FEATHER);	
-		ItemMeta hstm = hst.getItemMeta();		
-		hstm.setDisplayName(ChatColor.WHITE+""+ChatColor.BOLD+"Stormtrooper Helmet");	
-		hstm.setCustomModelData(101);
-		ArrayList<String> lore = new ArrayList<String>();
-		lore.add("This is the basic stormtrooper helmet!");
-		lore.add("Right Click To Wear!"); 
-		hstm.setLore(lore);		
-		hst.setItemMeta(hstm);
-		NamespacedKey key = new NamespacedKey(plugin, "stormtrooperhelmet1");
-		ShapedRecipe r = new ShapedRecipe(key, hst);
-		r.shape("III", "IGI", "   ");
-		r.setIngredient('I', Material.IRON_BLOCK);
-		r.setIngredient('G', Material.GLASS_PANE);
-		plugin.getServer().addRecipe(r);	
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
