@@ -48,7 +48,7 @@ import com.vark.bfhelmet.helmetsGui.AlienGUI;
 
 		}
 		
-		//Initializes GUI
+		//Initializes GUI .
 		
 		public RodianGUI(Plugin plugin, Player p)
 		{
