@@ -63,7 +63,13 @@ private final Inventory inv;
     	String s = ""+getSkillPoints(p);
     	
     	
-        inv.setItem(23,createGuiItem(101,Material.FEATHER, "§c§lAll Helmets",false));
+        inv.setItem(20,createGuiItem(101,Material.FEATHER, "§c§lAll Helmets",false));
+        
+       // inv.setItem(22,createGuiItem(103,Material.FEATHER, "§6§lOwned Helmets",false));
+        
+        inv.setItem(24,createGuiItem(102,Material.FEATHER, "§b§lUpgrades",false));
+        
+        inv.setItem(53,createGuiItem(1,Material.BARRIER,"§c§lRemove",false));
 
 
         
@@ -145,16 +151,47 @@ private final Inventory inv;
         // Using slots click is a best option for your inventory click's
        // p.sendMessage("You clicked at slot " + e.getRawSlot());
         
-        if(e.getRawSlot() == 23 && (e.getInventory().getItem(e.getRawSlot()).getType() != Material.AIR && e.getInventory().getItem(e.getRawSlot()).getType() != null ))
+        if(e.getRawSlot() == 20 && (e.getInventory().getItem(e.getRawSlot()).getType() != Material.AIR && e.getInventory().getItem(e.getRawSlot()).getType() != null ))
         {
 		
-			Inventory i = new UnlockGui(plugin,p).getInv();
+			Inventory i = new UnlockGUI(plugin,p).getInv();
 			p.closeInventory();
 			p.openInventory(i);
 			
 			
         }
         
+        if(e.getRawSlot() == 24 && (e.getInventory().getItem(e.getRawSlot()).getType() != Material.AIR && e.getInventory().getItem(e.getRawSlot()).getType() != null ))
+        {
+		
+			Inventory i = new UpgradeGUI(plugin,p).getInv();
+			p.closeInventory();
+			p.openInventory(i);
+			
+			
+        }
+        
+        
+
+        if(e.getRawSlot() == 53 && (e.getInventory().getItem(e.getRawSlot()).getType() != Material.AIR && e.getInventory().getItem(e.getRawSlot()).getType() != null ))
+        {
+		
+        	if(p.getInventory().getHelmet() != null)
+        	{
+        		if(p.getInventory().getHelmet().getType() == Material.FEATHER || p.getInventory().getHelmet().getType() == Material.PAPER)
+        		{
+        			
+        			p.getInventory().setHelmet(new ItemStack(Material.AIR));
+        			p.sendMessage(ChatColor.RED+"Removed Helmet!");
+        		}
+        		else
+        		{
+        			p.sendMessage(ChatColor.RED+"Could Not Remove This Helmet");
+        		}
+        	}
+        	
+        	
+        }
 
  
 
